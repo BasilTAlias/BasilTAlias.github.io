@@ -13,16 +13,30 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        #certifications .certification-item {
+        #certifications .heading {
+            text-align: center;
+        }
+        #certifications ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        #certifications li {
+            background: #fff;
+            border-radius: 10px;
+            padding: 10px 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            font-size: 16px;
             display: flex;
             align-items: center;
-            margin-bottom: 15px;
-            font-size: 18px;
+            gap: 8px;
         }
-        #certifications .certification-item img {
-            width: 28px;
-            height: 28px;
-            margin-right: 12px;
+        #certifications li img {
+            width: 24px;
+            height: auto;
         }
     </style>
 </head>
@@ -173,58 +187,21 @@
     <div id="certifications" class="background-alt">
         <h2 class="heading">Certifications</h2>
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="education-block">
-                        <div class="row">
-                            <div class="col-sm-2 text-center">
-                                <img src="https://img.icons8.com/color/64/000000/red-hat.png" alt="RedHat Icon" class="img-responsive center-block" />
-                            </div>
-                            <div class="col-sm-10">
-                                <h3>Red Hat Certified Engineer (RHCE)</h3>
-                                <span class="education-date">Issued by Red Hat</span>
-                                <h4>Validated advanced skills in Linux system administration and automation</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="education-block">
-                        <div class="row">
-                            <div class="col-sm-2 text-center">
-                                <img src="https://img.icons8.com/color/64/000000/red-hat.png" alt="RedHat Icon" class="img-responsive center-block" />
-                            </div>
-                            <div class="col-sm-10">
-                                <h3>Red Hat Certified System Administrator (RHCSA)</h3>
-                                <span class="education-date">Issued by Red Hat</span>
-                                <h4>Demonstrated core system administration skills for Red Hat Enterprise Linux</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="education-block">
-                        <div class="row">
-                            <div class="col-sm-2 text-center">
-                                <img src="https://img.icons8.com/color/64/000000/amazon-web-services.png" alt="AWS Icon" class="img-responsive center-block" />
-                            </div>
-                            <div class="col-sm-10">
-                                <h3>AWS Cloud Quest: Cloud Practitioner</h3>
-                                <span class="education-date">Issued by AWS</span>
-                                <h4>Hands-on foundational knowledge of AWS cloud concepts</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="education-block">
-                        <div class="row">
-                            <div class="col-sm-2 text-center">
-                                <img src="https://img.icons8.com/color/64/000000/lock--v1.png" alt="Security Icon" class="img-responsive center-block" />
-                            </div>
-                            <div class="col-sm-10">
-                                <h3>AWS Academy Cloud Security Builder</h3>
-                                <span class="education-date">Issued by AWS Academy</span>
-                                <h4>Specialized in building secure AWS cloud environments</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ul>
+                <li><img src="https://img.icons8.com/color/48/000000/red-hat.png" alt="RHCE"> Red Hat Certified Engineer (RHCE)</li>
+                <li><img src="https://img.icons8.com/color/48/000000/red-hat.png" alt="RHCSA"> Red Hat Certified System Administrator (RHCSA)</li>
+            </ul>
+            <ul>
+                <li><img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS Practitioner"> AWS Cloud Quest: Cloud Practitioner</li>
+                <li><img src="https://img.icons8.com/color/48/000000/lock--v1.png" alt="AWS Security"> AWS Academy Cloud Security Builder</li>
+            </ul>
+            <ul>
+                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/24px-Tux.svg.png" alt="Linux Foundation Logo"> Introduction to DevOps and Site Reliability Engineering (Linux Foundation)</li>
+                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/24px-Tux.svg.png" alt="Linux Foundation Logo"> Introduction to Linux (Linux Foundation)</li>
+            </ul>
+            <ul>
+                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Cisco_logo_blue_2016.svg/24px-Cisco_logo_blue_2016.svg.png" alt="Cisco Logo"> Linux Unhatched (Cisco)</li>
+            </ul>
         </div>
     </div>
 
